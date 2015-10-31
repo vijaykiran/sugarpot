@@ -1,7 +1,7 @@
 (defproject sugarpot "0.1.0-SNAPSHOT"
 
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "SugarPot - Health Monitoring Thingy"
+  :url "https://github.com/vijaykiran/sugarpot"
 
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [selmer "0.9.3"]
@@ -19,7 +19,7 @@
                  [metosin/ring-http-response "0.6.5"]
                  [bouncer "0.3.3"]
                  [prone "0.8.2"]
-                 [org.clojure/tools.nrepl "0.2.11"]
+                 [org.clojure/tools.nrepl "0.2.12"]
                  [org.webjars/bootstrap "3.3.5"]
                  [org.webjars/jquery "2.1.4"]
                  [migratus "0.8.7"]
@@ -45,9 +45,9 @@
    :project/dev  {:dependencies [[ring/ring-mock "0.3.0"]
                                  [ring/ring-devel "1.4.0"]
                                  [pjstadig/humane-test-output "0.7.0"]
-                                 [mvxcvi/puget "0.9.2"]]
-                  
-                  
+                                 [mvxcvi/puget "1.0.0"]]
+
+
                   :repl-options {:init-ns sugarpot.core}
                   :injections [(require 'pjstadig.humane-test-output)
                                (pjstadig.humane-test-output/activate!)]
